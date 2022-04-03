@@ -107,15 +107,65 @@
 // }
 // logicFunctionalFourth();
 
-function logicFunctionalFourth() {
-  let a = prompt('input number')
-  let b = prompt('input number ')
+// function logicFunctionalFourth() {
+//   let a = prompt('input number')
+//   let b = prompt('input number ')
 
-  a = Number(a);
-  b = Number(b);
-  let c = ((a > 2 && a < 11) || (b >= 6 && b < 14)) ? "True" : "False"
-  alert(c);
-}
-logicFunctionalFourth();
+//   a = Number(a);
+//   b = Number(b);
+//   let c = ((a > 2 && a < 11) || (b >= 6 && b < 14)) ? "True" : "False"
+//   alert(c);
+// }
+// logicFunctionalFourth();
 
 
+
+//For, while
+
+// function countFor() {
+//   let i = 1;
+//   for (1 == 1; i <= 50; i++)
+//     document.writeln(i);
+// }
+
+// countFor()
+
+// function countwhile() {
+//   let i = 1;
+//   while (i < 51) {
+//     document.writeln(i++);
+//   }
+// }
+// countwhile()
+
+// function countwhileThird() {
+//   let i = 1;
+//   let a = 0;
+//   while (i < 101) {
+//     if (i % 2 == 0) {
+
+//       a = a + i
+//       document.writeln(`четное число ${i + '<br>'}`);
+//       document.writeln(`сумма ${a + '<br>'}`);
+//     }
+//     i++
+//   }
+// }
+// countwhileThird()
+// function countInteration() {
+//   let i = 0;
+//   let n = 1000;
+//   while (n > 50) {
+//     n = n / 2;
+//     let k = n;
+
+//     i++;
+
+//   }
+//   // if (n < 50) n = n * 2;
+
+//   document.writeln(`последнее число ${n + '<br>'}`);
+
+//   document.writeln(`количество интераций ${i + '<br>'}`);
+// }
+// countInteration() 
