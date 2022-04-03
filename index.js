@@ -168,30 +168,135 @@
 
 //   document.writeln(`количество интераций ${i + '<br>'}`);
 // }
-// countInteration() 
+// countInteration()
 
 
 
-//switc;
+// //switc;
 
-let num = prompt(" Введите число от 1 до 4")
-let result;
-num = Number(num);
-switch (num) {
-  case 1:
-    result = "зима";
-    break;
-  case 2:
-    result = "весна";
-    break;
-  case 3:
-    result = "лето";
-    break;
-  case 4:
-    result = "осень";
+// let num = prompt(" Введите число от 1 до 4")
+// let result;
+// num = Number(num);
+// switch (num) {
+//   case 1:
+//     result = "зима";
+//     break;
+//   case 2:
+//     result = "весна";
+//     break;
+//   case 3:
+//     result = "лето";
+//     break;
+//   case 4:
+//     result = "осень";
+//     break;
+//   default:
+//     result = "Вы ввели не то число";
+// }
+// document.writeln(result);
+
+//  В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
+
+// function DecadeOfTheMoth() {
+//   let day = prompt("Введите число месяца");
+//   day = Number(day);
+//   if (day >= 1 && day < 8) {
+//     alert("Первая Декада");
+//   }
+//   else if (day >= 8 && day < 16) {
+//     alert("Первая Декада");
+//   }
+//   else if (day >= 16 && day < 23) {
+//     alert("Третья Декада");
+//   }
+//   else if (day >= 23 && day <= 30) {
+//     alert("Четверая Декада");
+//   }
+//   else {
+//     alert("Недопустимое значение")
+//   }
+
+// }
+// DecadeOfTheMoth()
+
+
+// function DecadeOfTheYear() {
+//   let month = prompt("Введите номер текущего месяца");
+//   month = Number(month);
+//   if ((month >= 1 && month < 3) || month == 12) {
+//     alert("Зима");
+//   }
+//   else if (month >= 3 && month < 6) {
+//     alert("Весна");
+//   }
+//   else if (month >= 6 && month < 9) {
+//     alert("Лето");
+//   }
+//   else if (month >= 9 && month < 12) {
+//     alert("Осень");
+//   }
+//   else {
+//     alert("Недопустимое значение")
+//   }
+
+// }
+// DecadeOfTheYear()
+//Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'. Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+// function symbolInString() {
+//   let str = "ahjdkjd"
+//   let i = str[0];
+//   let k = (i == "a") ? "Верно" : "Неверно"
+//   alert(k);
+
+// }
+// symbolInString()
+//Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. Если это так - выведите 'да', в противном случае выведите 'нет'.
+// function numberInString() {
+//   let str = "7234"
+//   let i = str[0];
+//   let k = (i == "1" || i == "2" || i == "3") ? "да" : "нет"
+//   alert(k);
+
+// }
+// numberInString()
+
+// Дана строка из 3-х цифр. Найдите сумму этих цифр. То есть сложите как числа первый символ строки, второй и третий.
+
+// function sumOfString() {
+//   let str = "183"
+//   let first = Number(str[0]);
+//   let second = Number(str[1]);
+//   let third = Number(str[2]);
+//   let sum = first + second + third;
+//   console.log(sum);
+
+// }
+// sumOfString()
+
+
+// Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+let str = "124123"
+let num;
+let i = 0;
+let sumfirst = 0;
+let sumSecond = 0;
+let l = str.length;
+for (i; i < l; i++) {
+  num = Number(str[i]);
+  if (i < 3) {
+    sumfirst = sumfirst + num;
+  }
+  else {
+    sumSecond = sumSecond + num;
+  }
+}
+switch (sumfirst) {
+  case sumSecond:
+    alert("True");
     break;
   default:
-    result = "Вы ввели не то число";
+    alert("false");
 }
-document.writeln(result);
 
