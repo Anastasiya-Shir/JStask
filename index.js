@@ -273,26 +273,96 @@
 
 // Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.
 
-let str = "124123"
-let num;
-let i = 0;
-let sumfirst = 0;
-let sumSecond = 0;
-let l = str.length;
-for (i; i < l; i++) {
-  num = Number(str[i]);
-  if (i < 3) {
-    sumfirst = sumfirst + num;
-  }
-  else {
-    sumSecond = sumSecond + num;
-  }
-}
-switch (sumfirst) {
-  case sumSecond:
-    alert("True");
-    break;
-  default:
-    alert("false");
-}
+// let str = "124123"
+// let num;
+// let i = 0;
+// let sumfirst = 0;
+// let sumSecond = 0;
+// let l = str.length;
+// for (i; i < l; i++) {
+//   num = Number(str[i]);
+//   if (i < 3) {
+//     sumfirst = sumfirst + num;
+//   }
+//   else {
+//     sumSecond = sumSecond + num;
+//   }
+// }
+// switch (sumfirst) {
+//   case sumSecond:
+//     alert("True");
+//     break;
+//   default:
+//     alert("false");
+// }
 
+// Задача. Создайте переменную str и присвойте ей значение 'abcde'. Обращаясь к отдельным символам этой строки выведите на экран символ 'a', символ 'b', символ 'e'.
+
+
+// function getElementFromString() {
+
+//   let str = "abcde";
+//   let i = 0;
+//   for (i; i < str.length; i++) {
+//     document.writeln(`${str[i] + '<br>'}`);
+//   }
+// }
+// getElementFromString()
+
+
+// function countTheNumberOfSecondsInDays() {
+//   let numberOfDay = prompt("Введите количество дней")
+
+//   let numberOfSeconds = numberOfDay * 24 * 60 * 30;
+//   alert(` В ${numberOfDay} днях ${numberOfSeconds} cекунд`)
+// }
+// countTheNumberOfSecondsInDays()
+
+// Переделайте приведенный код так, чтобы в нем использовались операции +=, -=, *=, /=, ++, --. Количество строк кода при этом не должно измениться. Код для переделки: var num = 1;num = num + 12;num = num - 14;num = num * 5;num = num / 7;num = num + 1;num = num - 1;alert(num);
+
+
+// var num = 1;
+// num += 12;
+// num -= 14;
+// num *= 5;
+// num /= 7;
+// num++;
+// num--;
+// alert(num);
+
+
+// Создайте переменные str1='Привет, ' и str2='Мир!'. С помощью этих переменных и операции сложения строк выведите на экран фразу 'Привет, Мир!'.
+
+// function GetAddingString() {
+//   let str1 = 'Привет, '
+//   let str2 = 'Мир!'
+//   let sumOfstrings = str1 + str2;
+//   alert(sumOfstrings)
+// }
+
+// GetAddingString()
+
+//    Создайте переменную name и присвойте ей ваше имя. Выведите на экран фразу 'Привет, %Имя%!'.
+
+// let name = "Nastiya";
+// document.write(` Hi, ${name}`)
+
+// Создайте переменную, присвойте ей число. Возведите это число в квадрат. Выведите его на экран.
+// let someNumber = 5;
+// let square = someNumber ** 2;
+// alert(square);
+
+
+// Создайте переменную num и присвойте ей значение '12345'. Найдите произведение (умножение) цифр этого числа.
+
+function getTheProductOfNumber() {
+  let str = "12345";
+  let product = 1;
+  let i = 0;
+  for (i; i < str.length; i++) {
+    product *= str[i];
+
+  }
+  document.writeln(product);
+}
+getTheProductOfNumber();
