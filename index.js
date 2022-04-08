@@ -124,7 +124,7 @@
 
 // function countFor() {
 //   let i = 1;
-//   for (1 == 1; i <= 50; i++)
+//   for (i; i <= 50; i++)
 //     document.writeln(i);
 // }
 
@@ -197,7 +197,7 @@
 
 //  В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
 
-// function DecadeOfTheMoth() {
+// function getdDecadeOfTheMoth() {
 //   let day = prompt("Введите число месяца");
 //   day = Number(day);
 //   if (day >= 1 && day < 8) {
@@ -217,53 +217,49 @@
 //   }
 
 // }
-// DecadeOfTheMoth()
+//getDecadeOfTheMoth()
 
 
-// function DecadeOfTheYear() {
+// function getDecadeOfTheYear() {
 //   let month = prompt("Введите номер текущего месяца");
 //   month = Number(month);
 //   if ((month >= 1 && month < 3) || month == 12) {
 //     alert("Зима");
-//   }
-//   else if (month >= 3 && month < 6) {
+//   } else if (month >= 3 && month < 6) {
 //     alert("Весна");
-//   }
-//   else if (month >= 6 && month < 9) {
+//   } else if (month >= 6 && month < 9) {
 //     alert("Лето");
-//   }
-//   else if (month >= 9 && month < 12) {
+//   } else if (month >= 9 && month < 12) {
 //     alert("Осень");
-//   }
-//   else {
+//   } else {
 //     alert("Недопустимое значение")
 //   }
 
 // }
-// DecadeOfTheYear()
+// getDecadeOfTheYear()
 //Дана строка, состоящая из символов, например, 'abcde'. Проверьте, что первым символом этой строки является буква 'a'. Если это так - выведите 'да', в противном случае выведите 'нет'.
 
-// function symbolInString() {
+// function getSymbolString() {
 //   let str = "ahjdkjd"
 //   let i = str[0];
 //   let k = (i == "a") ? "Верно" : "Неверно"
 //   alert(k);
 
 // }
-// symbolInString()
+// getSymbolString()
 //Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. Если это так - выведите 'да', в противном случае выведите 'нет'.
-// function numberInString() {
+// function getNumberInString() {
 //   let str = "7234"
 //   let i = str[0];
 //   let k = (i == "1" || i == "2" || i == "3") ? "да" : "нет"
 //   alert(k);
 
 // }
-// numberInString()
+// getNumberInString()
 
 // Дана строка из 3-х цифр. Найдите сумму этих цифр. То есть сложите как числа первый символ строки, второй и третий.
 
-// function sumOfString() {
+// function writeSumOfString() {
 //   let str = "183"
 //   let first = Number(str[0]);
 //   let second = Number(str[1]);
@@ -272,7 +268,7 @@
 //   console.log(sum);
 
 // }
-// sumOfString()
+// writeSumOfString()
 
 
 // Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', в противном случае выведите 'нет'.
