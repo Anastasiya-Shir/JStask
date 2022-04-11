@@ -355,14 +355,37 @@
 
 // Создайте переменную num и присвойте ей значение '12345'. Найдите произведение (умножение) цифр этого числа.
 
-function getTheProductOfNumber() {
-  let str = "12345";
-  let product = 1;
-  let i = 0;
-  for (i; i < str.length; i++) {
-    product *= str[i];
+// function getTheProductOfNumber() {
+//   let str = "12345";
+//   let product = 1;
+//   let i = 0;
+//   for (i; i < str.length; i++) {
+//     product *= str[i];
 
-  }
-  document.writeln(product);
-}
-getTheProductOfNumber();
+//   }
+//   document.writeln(product);
+// }
+// getTheProductOfNumber();
+
+//   }
+
+
+// }
+// Задача 1. Напишите функцию, которая принимает 2 числа и возвращает 1, если первое число больше, чем второе; -1, если первое число меньше, чем второе, и 0, если числа равны.
+// function getWhichNumberMore(a, b) {
+//   if (a > b) {
+//     return 1;
+//   } else if (a < b) {
+//     return 2;
+//   } else
+//     return 0;
+// }
+
+
+
+// let getWhichNumberMore = (a, b) => { return (a > b ? 1 : (a < b ? 2 : 0)); }
+
+
+// let a = prompt("введите первое число");
+// let b = prompt("введите второе число");
+// alert(getWhichNumberMore(a, b))
