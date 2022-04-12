@@ -448,3 +448,6 @@ function getOneNumber() {
   return document.write(num);
 }
 getOneNumber(1, 2, 4, 0, 7);
+
+
+
