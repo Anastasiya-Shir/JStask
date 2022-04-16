@@ -373,6 +373,7 @@
 // }
 // Задача 1. Напишите функцию, которая принимает 2 числа и возвращает 1, если первое число больше, чем второе; -1, если первое число меньше, чем второе, и 0, если числа равны.
 // function getWhichNumberMore(a, b) {
+
 //   if (a > b) {
 //     return 1;
 //   } else if (a < b) {
@@ -388,7 +389,9 @@
 
 // let a = prompt("введите первое число");
 // let b = prompt("введите второе число");
+
 // alert(getWhichNumberMore(a, b))
+
 // function getSquare(a, b) {
 //   let square;
 //   b === undefined ? square = a ** 2 : square = a * b;
@@ -411,6 +414,7 @@
 // console.log(calcEvenOrNotEven(5, 8))
 // Функция sequence(start, step) при вызове возвращает функцию-генератор. Каждый вызов генератора возвращает новое число в числовой последовательности. start – стартовое число (по умолчанию 0). step – шаг приращения (по умолчанию 1).
 // function sequence(start, step) {
+
 //   for (let i = 1; i <= step; i++) {
 //     generator(start);
 //     start = start + step
@@ -431,9 +435,11 @@
 
 // function getString() {
 //   let str = "";
+
 //   for (let i = 0; i < arguments.length; i++) {
 //     str += arguments[i] + " ";
 //   }
+
 //   return document.write(str);
 // }
 
@@ -442,9 +448,11 @@
 // Задача 2. Напишите функцию, которая принимает произвольное количество аргументов в виде однозначных чисел и возвращает 1 многозначное число. Например, функция с именем complexDigit() при вызове  complexDigit(3,6,7) вернет число 367, а complexDigit(1,9, 4, 8,3) вернет число 19483.
 function getOneNumber() {
   var num = "";
+
   for (let i = 0; i < arguments.length; i++) {
     num += arguments[i];
   }
+
   return document.write(num);
 }
 getOneNumber(1, 2, 4, 0, 7);
