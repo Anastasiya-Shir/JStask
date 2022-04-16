@@ -33,13 +33,13 @@
 // // if
 // let a = prompt("input you age");
 
-// let b = (a > 10) ? "Верно" : "Неверно";
+// let b = a > 10? "Верно" : "Неверно";
 // alert(`Your age more than 10 - ${b}`);
 // function quater() {
 //   let min = prompt("input numper from 0 to 59");
 
 //   if (min >= 0 & min < 15) {
-//     alert(" first quater")
+//     alert(" first quater");
 //   }
 
 //   else if (min >= 15 & min < 30) {
@@ -287,8 +287,7 @@
 //   num = Number(str[i]);
 //   if (i < 3) {
 //     sumfirst = sumfirst + num;
-//   }
-//   else {
+//   }  else {
 //     sumSecond = sumSecond + num;
 //   }
 // }
@@ -306,7 +305,6 @@
 
 
 // function getElementFromString() {
-
 //   let str = "abcde";
 //   let i = 0;
 //   for (i; i < str.length; i++) {
@@ -317,7 +315,7 @@
 
 
 // function countTheNumberOfSecondsInDays() {
-//   let numberOfDay = prompt("Введите количество дней")
+//   let numberOfDay = prompt("Введите количество дней");
 
 //   let numberOfSeconds = numberOfDay * 24 * 60 * 30;
 //   alert(` В ${numberOfDay} днях ${numberOfSeconds} cекунд`)
@@ -365,10 +363,17 @@ function getTheProductOfNumber() {
   let str = "12345";
   let product = 1;
   let i = 0;
+
   for (i; i < str.length; i++) {
     product *= str[i];
-
   }
+
   document.writeln(product);
 }
+
 getTheProductOfNumber();
+
+
+
+
+
