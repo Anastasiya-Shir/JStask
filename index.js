@@ -394,7 +394,9 @@
 
 // function getSquare(a, b) {
 //   let square;
+
 //   b === undefined ? square = a ** 2 : square = a * b;
+
 //   return square;
 // }
 
@@ -404,28 +406,41 @@
 //
 // Задача 1
 // Написать функцию, получающую на вход два числа. Если оба числа чётные - функция возвращает их произведение. Если оба числа нечётные - функция возвращает их сумму. Если одно из чисел чётное, а второе нечётное - функция возвращает это нечётное число.
+
 // let calcEvenOrNotEven = (a, b) => {
 //   let remain;
-//   a % 2 == 0 && b % 2 == 0 ? remain = a * b : a % 2 != 0 && b % 2 != 0 ? remain = a + b : a % 2 == 0 ? remain = a : remain = b;
+
+//   if (a % 2 == 0 && b % 2 == 0) {
+//     remain = a * b;
+//   } else if (a % 2 != 0 && b % 2 != 0) {
+//     remain = a + b;
+//   } else if (a % 2 == 0) {
+//     remain = a;
+//   } else {
+//     remain = b;
+//   }
+
 //   return remain;
 
-
 // }
-// console.log(calcEvenOrNotEven(5, 8))
+
+// console.log(calcEvenOrNotEven(9, 7))
 // Функция sequence(start, step) при вызове возвращает функцию-генератор. Каждый вызов генератора возвращает новое число в числовой последовательности. start – стартовое число (по умолчанию 0). step – шаг приращения (по умолчанию 1).
-// function sequence(start, step) {
+function sequence(start = 1, step = 0) {
 
-//   for (let i = 1; i <= step; i++) {
-//     generator(start);
-//     start = start + step
-//   }
-// }
+  return function () {
+    start += step
 
-// function generator(a) {
-//   return alert(a);
-// }
+    return start
+  }
 
-// sequence(11, 4)
+}
+
+let generator = sequence(10, 3);
+
+alert(generator())
+alert(generator())
+alert(generator())
 
 
 
@@ -446,16 +461,19 @@
 // getString("I've", "been", "learning", "JavaScript", "for", "a", "month");
 
 // Задача 2. Напишите функцию, которая принимает произвольное количество аргументов в виде однозначных чисел и возвращает 1 многозначное число. Например, функция с именем complexDigit() при вызове  complexDigit(3,6,7) вернет число 367, а complexDigit(1,9, 4, 8,3) вернет число 19483.
-function getOneNumber() {
-  var num = "";
+// function getOneNumber() {
+//   var num = "";
 
-  for (let i = 0; i < arguments.length; i++) {
-    num += arguments[i];
-  }
+//   for (let i = 0; i < arguments.length; i++) {
+//     num += arguments[i];
+//   }
 
-  return document.write(num);
-}
-getOneNumber(1, 2, 4, 0, 7);
+//   return num;
+// }
+
+// document.write(getOneNumber(1, 2, 4, 0, 7));
+
+
 
 
 
