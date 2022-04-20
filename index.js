@@ -202,17 +202,13 @@
 //   day = Number(day);
 //   if (day >= 1 && day < 8) {
 //     alert("Первая Декада");
-//   }
-//   else if (day >= 8 && day < 16) {
+//   } if else  (day >= 8 && day < 16) {
 //     alert("Первая Декада");
-//   }
-//   else if (day >= 16 && day < 23) {
+//   } if else (day >= 16 && day < 23) {
 //     alert("Третья Декада");
-//   }
-//   else if (day >= 23 && day <= 30) {
+//   } if else (day >= 23 && day <= 30) {
 //     alert("Четверая Декада");
-//   }
-//   else {
+//   } else {
 //     alert("Недопустимое значение")
 //   }
 
