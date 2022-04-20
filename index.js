@@ -395,7 +395,7 @@
 // function getSquare(a, b) {
 //   let square;
 
-//   b === undefined ? square = a ** 2 : square = a * b;
+//    square = !!b ?  a ** 2 : a * b;;
 
 //   return square;
 // }
@@ -426,7 +426,7 @@
 
 // console.log(calcEvenOrNotEven(9, 7))
 // Функция sequence(start, step) при вызове возвращает функцию-генератор. Каждый вызов генератора возвращает новое число в числовой последовательности. start – стартовое число (по умолчанию 0). step – шаг приращения (по умолчанию 1).
-function sequence(start = 1, step = 0) {
+let sequence = (start = 1, step = 0) => {
 
   return function () {
     start += step
