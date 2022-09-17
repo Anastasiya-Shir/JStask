@@ -202,17 +202,13 @@
 //   day = Number(day);
 //   if (day >= 1 && day < 8) {
 //     alert("Первая Декада");
-//   }
-//   else if (day >= 8 && day < 16) {
+//   } if else  (day >= 8 && day < 16) {
 //     alert("Первая Декада");
-//   }
-//   else if (day >= 16 && day < 23) {
+//   } if else (day >= 16 && day < 23) {
 //     alert("Третья Декада");
-//   }
-//   else if (day >= 23 && day <= 30) {
+//   } if else (day >= 23 && day <= 30) {
 //     alert("Четверая Декада");
-//   }
-//   else {
+//   } else {
 //     alert("Недопустимое значение")
 //   }
 
@@ -373,6 +369,7 @@
 // }
 // Задача 1. Напишите функцию, которая принимает 2 числа и возвращает 1, если первое число больше, чем второе; -1, если первое число меньше, чем второе, и 0, если числа равны.
 // function getWhichNumberMore(a, b) {
+
 //   if (a > b) {
 //     return 1;
 //   } else if (a < b) {
@@ -388,4 +385,91 @@
 
 // let a = prompt("введите первое число");
 // let b = prompt("введите второе число");
+
 // alert(getWhichNumberMore(a, b))
+
+// function getSquare(a, b) {
+//   let square;
+
+//    square = !!b ?  a ** 2 : a * b;;
+
+//   return square;
+// }
+
+// console.log(getSquare(8, 3))
+
+
+//
+// Задача 1
+// Написать функцию, получающую на вход два числа. Если оба числа чётные - функция возвращает их произведение. Если оба числа нечётные - функция возвращает их сумму. Если одно из чисел чётное, а второе нечётное - функция возвращает это нечётное число.
+
+// let calcEvenOrNotEven = (a, b) => {
+//   let remain;
+
+//   if (a % 2 == 0 && b % 2 == 0) {
+//     remain = a * b;
+//   } else if (a % 2 != 0 && b % 2 != 0) {
+//     remain = a + b;
+//   } else if (a % 2 == 0) {
+//     remain = a;
+//   } else {
+//     remain = b;
+//   }
+
+//   return remain;
+
+// }
+
+// console.log(calcEvenOrNotEven(9, 7))
+// Функция sequence(start, step) при вызове возвращает функцию-генератор. Каждый вызов генератора возвращает новое число в числовой последовательности. start – стартовое число (по умолчанию 0). step – шаг приращения (по умолчанию 1).
+let sequence = (start = 1, step = 0) => {
+
+  return function () {
+    start += step
+
+    return start
+  }
+
+}
+
+let generator = sequence(10, 3);
+
+alert(generator())
+alert(generator())
+alert(generator())
+
+
+
+// Задача 1. Напишите функцию, которая принимает произвольное количество аргументов в виде строк и выводит их через пробел с помощью document.write() в тело html-документа. Например, функция  showWords("I've", "been", "learning", "JavaScript", "for", "a", "month") должна вывести фразу "I've been learning
+
+
+
+// function getString() {
+//   let str = "";
+
+//   for (let i = 0; i < arguments.length; i++) {
+//     str += arguments[i] + " ";
+//   }
+
+//   return document.write(str);
+// }
+
+// getString("I've", "been", "learning", "JavaScript", "for", "a", "month");
+
+// Задача 2. Напишите функцию, которая принимает произвольное количество аргументов в виде однозначных чисел и возвращает 1 многозначное число. Например, функция с именем complexDigit() при вызове  complexDigit(3,6,7) вернет число 367, а complexDigit(1,9, 4, 8,3) вернет число 19483.
+// function getOneNumber() {
+//   var num = "";
+
+//   for (let i = 0; i < arguments.length; i++) {
+//     num += arguments[i];
+//   }
+
+//   return num;
+// }
+
+// document.write(getOneNumber(1, 2, 4, 0, 7));
+
+
+
+
+
